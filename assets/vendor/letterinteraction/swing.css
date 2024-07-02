@@ -1,0 +1,134 @@
+.word {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.word--swing {
+	font-size: 6em;
+	letter-spacing: 2px;
+	font-family: 'Londrina Solid', serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #2d205f;
+	/*color: #0e0e19;*/
+	line-height: 1;
+	perspective: 800px;
+}
+@media (max-width: 530px) {
+	.word--swing{
+		font-size: 5em;
+	}
+}
+@media (max-width: 430px) {
+	.word--swing{
+		font-size: 4em;
+	}
+}
+
+/* .word--swing > span:first-child {
+	color: #ed6470;
+}
+
+.word--swing > span:nth-child(2) {
+	color: #7577ea;
+}
+
+.word--swing > span:nth-child(7) {
+	color: #4dd12d;
+}
+
+.word--swing > span:nth-child(4) {
+	color: #f7fb4f;
+}
+
+.word--swing > span:nth-child(5) {
+	color: #f5ba0b;
+}
+
+.word--swing > span:nth-child(6) {
+	color: #6830cb;
+}
+
+.word--swing > span:nth-child(3) {
+	color: #f02424;
+}
+
+.word--swing > span:nth-child(8) {
+	color: #10b3f3;
+}
+.word--swing > span:nth-child(9) {
+	color: #3310f3;
+}
+.word--swing > span:nth-child(10) {
+	color: #2d205f;
+}
+.word--swing > span:nth-child(11) {
+	color: #b110f3;
+}
+.word--swing > span:nth-child(12) {
+	color: #e5348e;
+}
+.word--swing > span:nth-child(13) {
+	color: #3450db;
+}
+.word--swing > span:nth-child(14) {
+	color: #697874;
+}
+.word--swing > span:nth-child(15) {
+	color: #f361e8;
+}
+.word--swing-two > span:nth-child(1) {
+	color: #2d205f;
+}
+.word--swing-two > span:nth-child(2) {
+	color: #b110f3;
+}
+.word--swing-two > span:nth-child(3) {
+	color: #3450db;
+}
+.word--swing-two > span:nth-child(4) {
+	color: #697874;
+}
+.word--swing-two > span:nth-child(5) {
+	color: #f361e8;
+} */
+
+.word--swing svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 450px;
+	height: 510px;
+	margin: -255px 0 0 -225px;
+	pointer-events: none;
+}
+
+.word--swing svg circle {
+	fill: currentColor;
+	opacity: 0;
+	transform-origin: 50% 50%;
+}
+
+.word--swing span {
+	display: block;
+	position: relative;
+}
+
+.word--swing span span:first-of-type {
+	position: absolute;
+	font-family: 'Londrina Outline';
+}
+
+.word--swing span span:last-of-type {
+	transform-style: preserve-3d;
+}
